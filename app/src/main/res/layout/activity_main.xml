@@ -10,4 +10,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/btnUpdateNoDiff"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/studentList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update No Dif"
+        />
+    <Button
+        android:id="@+id/btnUpdateDiff"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/btnUpdateNoDiff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Dif"
+
+        />
 </RelativeLayout>
