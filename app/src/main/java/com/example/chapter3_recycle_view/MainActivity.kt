@@ -1,5 +1,6 @@
 package com.example.chapter3_recycle_view
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -64,5 +65,11 @@ class MainActivity : AppCompatActivity() {
         studentList.adapter = adapterStudent
 //        studentList.adapter = adapterProvince
         studentList.layoutManager = lm
+
+        adapterStudent.onClick = {
+            var pindah = Intent(this, DetailStudentActivity::class.java)
+            pindah.putExtra("detailStudent", it)
+            startActivity(pindah)
+        }
     }
 }
