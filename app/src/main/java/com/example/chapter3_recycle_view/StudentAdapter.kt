@@ -11,9 +11,9 @@ class StudentAdapter(private val studentList: ArrayList<ListStudent>) :
     RecyclerView.Adapter<StudentAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val nama =itemView.findViewById<TextView>(R.id.studentName)
-        val nim = itemView.findViewById<TextView>(R.id.studentNim)
-        val image = itemView.findViewById<ImageView>(R.id.studentImage)
+        val nama = itemView.findViewById<TextView>(R.id.studentName)!!
+        val nim = itemView.findViewById<TextView>(R.id.studentNim)!!
+        val image = itemView.findViewById<ImageView>(R.id.studentImage)!!
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): StudentAdapter.ViewHolder {

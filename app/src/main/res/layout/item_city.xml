@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -20,22 +21,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="RtlSymmetry" />
         <TextView
             android:id="@+id/cityName"
             android:paddingStart="10dp"
-            android:textSize="24sp"
+            android:textSize="20sp"
             android:layout_below="@id/provinceName"
             android:textColor="@color/black"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
+            tools:ignore="RtlSymmetry" />
+
         <ImageView
             android:id="@+id/cityImage"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_foreground" />
+            android:src="@drawable/ic_launcher_foreground"
+            android:contentDescription="@string/image_city_buildings" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

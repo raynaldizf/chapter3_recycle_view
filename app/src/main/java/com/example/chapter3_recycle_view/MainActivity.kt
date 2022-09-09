@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //
-//        val listStudentItem = arrayListOf<ListStudent>(
+//        val listStudentItem = arrayListOf(
 //            ListStudent("Raynaldi", "20104042", R.drawable.ic_launcher_foreground),
 //            ListStudent("Zulfikar", "20104043", R.drawable.ic_launcher_foreground),
 //            ListStudent("Singgih", "20104044", R.drawable.ic_launcher_foreground),
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 //            ListStudent("Hartono", "20104046", R.drawable.ic_launcher_foreground),
 //        )
 
-        val listProvince = arrayListOf<ProvinceItems>(
+        val listProvince = arrayListOf(
             ProvinceItems("Kalimantan Barat", "Potianak", R.drawable.kalimantan_barat_rumah_panjang),
             ProvinceItems("Kalimantan Selatan", "Banjarbaru", R.drawable.kalimantan_selatan_rumah_bubungan_tinggi),
             ProvinceItems("Kalimantan Tengah", "Palangkaraya", R.drawable.kalimantan_tengah_rumah_betang),
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             )
 
 //        var adapterStudent = StudentAdapter(listStudentItem)
-        var adapterProvince = ProvinceAdapter(listProvince)
+        val adapterProvince = ProvinceAdapter(listProvince)
         val lm = LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false)
 
         studentList.adapter = adapterProvince

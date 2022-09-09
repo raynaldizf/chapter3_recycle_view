@@ -9,9 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 
 class ProvinceAdapter(private val listCity: ArrayList<ProvinceItems>): RecyclerView.Adapter<ProvinceAdapter.ViewHolder>() {
     class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        val provinceName = itemView.findViewById<TextView>(R.id.provinceName)
-        val cityName = itemView.findViewById<TextView>(R.id.cityName)
-        val image = itemView.findViewById<ImageView>(R.id.cityImage)
+        val provinceName = itemView.findViewById<TextView>(R.id.provinceName)!!
+        val cityName = itemView.findViewById<TextView>(R.id.cityName)!!
+        val image = itemView.findViewById<ImageView>(R.id.cityImage)!!
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

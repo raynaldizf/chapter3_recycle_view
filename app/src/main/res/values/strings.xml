@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">chapter3_recycle_view</string>
+    <string name="image_city_buildings">Image City Buildings</string>
+    <string name="image_profile_student">Image Profile Student</string>
 </resources>
